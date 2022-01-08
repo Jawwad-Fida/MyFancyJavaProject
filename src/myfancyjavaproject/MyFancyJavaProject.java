@@ -8,6 +8,10 @@ class TestClass {
         this.id = id;
         this.name = name;
     }
+    
+    public void display(){
+        System.out.println("ID = " +id +", " +"Name: " +name);
+    }
 }
 
 public class MyFancyJavaProject {
@@ -19,6 +23,7 @@ public class MyFancyJavaProject {
         String name = "Sam";
         
         TestClass tc;
-        tc = new TestClass(id,name);  
+        tc = new TestClass(id,name);
+        tc.display();
     } 
 }
